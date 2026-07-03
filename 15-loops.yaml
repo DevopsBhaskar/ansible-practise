@@ -3,7 +3,7 @@
   connection: local
   tasks: 
   - name: printing loop with item
-    ansible.builtin.debug:
+    ansible.builtin.package:
       msg: " iteration items are {{ item }}"
     loop: 
     - linux
