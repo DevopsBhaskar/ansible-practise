@@ -1,6 +1,6 @@
 - name: "Printing Data types"
   hosts: local
-  connections: local
+  connection: local
   vars: 
     name: Bhaskar
     age: 26
