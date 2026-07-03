@@ -1,0 +1,20 @@
+- name: Printing Data types
+  hosts: local
+  connections: local
+  vars: 
+    name: Bhaskar
+    age: 26
+    is_live: true
+    #lists
+    tools: 
+    - linux
+    - shell
+    - ansible
+
+    concepts: 
+      cloud: amazoncloud
+      cm: ansible
+  tasks:
+  - name: Printing all details of Bhaskar
+    ansible.builtin.debug:
+      msg: " user is {{ name }}, age is {{ age }}, living {{ is_live}}, tools are {{ tools }}, concepts are {{ concepts}}"
