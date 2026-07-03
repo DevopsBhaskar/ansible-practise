@@ -1,0 +1,25 @@
+- name: "person A"
+  hosts: local
+  connection: local
+  tasks: 
+  - name: "person a and task1"
+    ansible.builtin.debug:
+      msg: "Person A and Task 1"
+  
+  - name: Person a and task 2
+    ansible.builtin.debug:
+      msg: "Person A and Task 2"
+
+
+- name: "person B"
+  hosts: local
+  connection: local
+  tasks: 
+  - name: "person b and task1"
+    ansible.builtin.debug:
+      msg: "Person B and Task 1"
+  
+  - name: Person b and task 2
+    ansible.builtin.debug:
+      msg: "Person B and Task 2"
+
