@@ -3,5 +3,5 @@
   connection: local
   tasks: 
   - name: facts
-    anisble.builtin.debug:
+    ansible.builtin.debug:
       msg: " ansible facts info {{ansible_facts}}"
