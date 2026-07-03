@@ -5,7 +5,6 @@
   - name: username
     prompt: what is your username?
     private: false
-    
   - name: password
     promt: what is your password?
     private: true
