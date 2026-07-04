@@ -7,7 +7,7 @@
       msg: "Hello {{ name | default('Bhaskar')}}"
 
   - name: using shell command
-    anisble.builtin.command: cat /etc/passwd | grep root
+    ansible.builtin.command: cat /etc/passwd | grep root
     register: command_output
 
   - name: printing command output
