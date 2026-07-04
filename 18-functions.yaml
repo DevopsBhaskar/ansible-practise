@@ -14,3 +14,12 @@
     ansible.builtin.debug:
       msg: "{{ command_output}}"
 
+  - name: redirect the output
+    ansible.builtin.command: ls -ltr > /tmp/output.txt
+    registed: redirect_op
+    ignore_errors: true
+
+  - name: printing redirect output
+    ansible.builtin.debug:
+      msg: {{ redirect_op}}
+
