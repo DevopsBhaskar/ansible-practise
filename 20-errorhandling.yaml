@@ -8,5 +8,5 @@
     register: robo_output
 
   - name: printing roboshop output
-    anisble.builtin.debug:
+    ansible.builtin.debug:
       msg: "{{robo_output}}"
