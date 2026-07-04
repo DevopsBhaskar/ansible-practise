@@ -5,3 +5,12 @@
   - name: default variables
     ansible.builtin.debug:
       msg: "Hello {{ name | default('Bhaskar')}}"
+
+  - name: using shell command
+    anisble.builtin.command: cat /etc/passwd | grep root
+    register: command_output
+
+  - name: printing command output
+    ansible.builtin.debug:
+      msg: {{ command_output}}
+      
