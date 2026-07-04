@@ -16,7 +16,7 @@
 
   - name: redirect the output
     ansible.builtin.command: ls -ltr > /tmp/output.txt
-    registed: redirect_op
+    register: redirect_op
     ignore_errors: true
 
   - name: printing redirect output
