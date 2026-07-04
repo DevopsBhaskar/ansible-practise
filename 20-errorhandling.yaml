@@ -6,6 +6,7 @@
   - name: checking roboshop exit or not
     ansible.builtin.command: id roboshop
     register: robo_output
+    ignore_errors: true
 
   - name: printing roboshop output
     ansible.builtin.debug:
