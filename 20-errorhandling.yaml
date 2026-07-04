@@ -1,0 +1,12 @@
+- name: Error handling
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: checking roboshop exit or not
+    ansible.builtin.command: id roboshop
+    register: robo_output
+
+  - name: printing roboshop output
+    anisble.builtin.debug:
+      msg: "{{robo_output}}"
